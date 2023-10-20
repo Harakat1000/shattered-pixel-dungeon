@@ -45,7 +45,7 @@ public class Bestiary {
 				//3x rat, 1x snake
 				return new ArrayList<>(Arrays.asList(
 						Rat.class, Rat.class, Rat.class,
-						Snake.class));
+						DreamSnake.class));
 			case 2:
 				//2x rat, 1x snake, 2x gnoll
 				return new ArrayList<>(Arrays.asList(Rat.class, Rat.class,
@@ -218,6 +218,8 @@ public class Bestiary {
 					cl = Albino.class;
 				} else if (cl == Slime.class) {
 					cl = CausticSlime.class;
+				} else if (cl == Snake.class) {
+					cl = DreamSnake.class;
 				} else if (cl == Thief.class) {
 					cl = Bandit.class;
 				} else if (cl == Necromancer.class){
